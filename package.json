@@ -1,0 +1,19 @@
+{
+  "name": "local-eco-tracker",
+  "version": "1.0.0",
+  "description": "Local Eco Tracker - 3rd Year B.Sc. Computer Science Mini Project",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server"
+  },
+  "keywords": [
+    "eco-tracker",
+    "fullstack",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}
