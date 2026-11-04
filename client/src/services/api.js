@@ -1,11 +1,15 @@
+
 import axios from 'axios';
+
+// Deployed Render backend URL
+const BACKEND_URL = import.meta.env.VITE_API_URL || 'https://local-eco-tracker-4.onrender.com';
 
 // Centralized Axios instance
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: `${BACKEND_URL}/api`,
 });
 
-export const BACKEND_URL = 'http://localhost:5000';
+export { BACKEND_URL };
 
 // Helper to resolve full image URLs
 export const getImageUrl = (imagePath) => {
